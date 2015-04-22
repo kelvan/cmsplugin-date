@@ -3,11 +3,11 @@ from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 
-from .models import Date
+from .models import DateElement
 
 
 class DatePlugin(CMSPluginBase):
-    model = Date
+    model = DateElement
     name = _('Date')
     render_template = 'cms/plugins/date.html'
 
